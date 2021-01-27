@@ -13,7 +13,7 @@ namespace NetCoreAngular.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing_", "Bracing_", "Chilly_", "Cool_", "Mild_", "Warm_", "Balmy_", "Hot_", "Sweltering_", "Scorching_"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
