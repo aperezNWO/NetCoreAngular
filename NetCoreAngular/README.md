@@ -1,2 +1,0 @@
-# NetCoreAngular
-NetCoreAngular
