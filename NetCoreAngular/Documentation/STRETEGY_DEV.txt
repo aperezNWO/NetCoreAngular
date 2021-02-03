@@ -1,0 +1,26 @@
+﻿----------------------------------------------------------------------
+-- STRATEGY - GENERAL
+----------------------------------------------------------------------
+
+[x] Add Footer
+[x] Add Version.
+
+----------------------------------------------------------------------
+-- STRATEGY - ACTIVITY LOG
+----------------------------------------------------------------------
+[x] Create Page.
+[x] Esquema de Tabla.
+	[x] Explorador ms sql server | visual studio.
+[_] Funcionalidad de Logger.
+[>] Dev Strategy.
+	[>] CTRL + F5.
+	[>] Keep port open.
+	[>] Angula config, production = true.
+	[>] Split Project (MVC).
+	[>] Allow CORS.
+[_] Paged Grid.
+	[_] https://material.angular.io/components/paginator/
+	[_] https://www.tutorialesprogramacionya.com/angularya/detalleconcepto.php?punto=46&codigo=46&inicio=40
+
+
+----------------------------------------------------------------------

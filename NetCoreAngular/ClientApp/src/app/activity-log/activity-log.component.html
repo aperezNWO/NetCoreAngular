@@ -1,0 +1,29 @@
+<h1 id="tableLabel">Activity Log</h1>
+
+<p>Registro de Visitas a este aplicativo.</p>
+
+<p *ngIf="!accessLogEntities"><em>Loading...</em></p>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" #tabla1>
+
+    <ng-container matColumnDef="PageName">
+      <th mat-header-cell *matHeaderCellDef> PAGE_NAME </th>
+      <td mat-cell *matCellDef="let accessLogEntity"> {{accessLogEntity.PageName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="IpValue">
+      <th mat-header-cell *matHeaderCellDef> IP_VALUE </th>
+      <td mat-cell *matCellDef="let accessLogEntity"> {{accessLogEntity.IpValue}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="AccessDate">
+      <th mat-header-cell *matHeaderCellDef> ACCESS_DATE </th>
+      <td mat-cell *matCellDef="let accessLogEntity"> {{accessLogEntity.AccessDate}} </td>
+    </ng-container>
+
+    <tr mat-header-row   *matHeaderRowDef="columnas"></tr>
+    <tr mat-row          *matRowDef      ="let row; columns: columnas;" ></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+</div>
